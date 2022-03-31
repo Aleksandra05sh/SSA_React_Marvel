@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - 16
 
+os: windows
+
 cache:
   yarn: true
   directories:
@@ -22,7 +24,6 @@ jobs:
     - stage: Deploy
       before_deploy:
         - yarn build
-        - ls
       deploy:
         provider: pages
         skip_cleanup: true
