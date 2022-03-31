@@ -3,8 +3,6 @@ language: node_js
 node_js:
   - 16
 
-os: osx
-
 cache:
   yarn: true
   directories:
